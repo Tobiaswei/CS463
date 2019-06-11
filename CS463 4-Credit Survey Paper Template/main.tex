@@ -1,0 +1,49 @@
+\documentclass{article}
+\usepackage[english]{babel}
+\usepackage{blindtext}
+\usepackage{multicol}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage[top=1.0in,bottom=1.0in,left=0.75in,right=0.75in]{geometry}
+\usepackage{hyperref}
+\usepackage{babel}
+\usepackage[
+    natbib=true,
+    style=numeric,
+    sorting=none
+]{biblatex}
+\bibliography{bibliography.bib}
+ 
+ 
+\title{\vspace{-3.0cm} CS463 Survey Paper: [Paper Title]}
+\author{[Your Name] \\
+\href{mailto:[netid]@illinois.edu}{[netid]@illinois.edu}}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{2}
+
+
+
+\begin{abstract}
+\blindtext
+\end{abstract}
+
+
+\section{Introduction}
+\input{introduction}
+\label{sec:introduction}
+
+\section{...}
+
+\section{Conclusion}
+\input{conclusion}
+\label{sec:conclusion}
+
+\printbibliography
+
+\end{multicols}
+\end{document}
